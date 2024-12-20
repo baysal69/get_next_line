@@ -6,13 +6,16 @@
 /*   By: sel-khao <sel-khao <marvin@42.fr>>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 14:51:24 by sel-khao          #+#    #+#             */
-/*   Updated: 2024/12/16 15:00:46 by sel-khao         ###   ########.fr       */
+/*   Updated: 2024/12/20 16:18:55 by sel-khao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "get_next_line.h"
 
 char	*get_next_line(int fd)
 {
-	
+	int	fd;
+
+	if (BUFFER_SIZE <= 0 || fd <= 0)
+		return (NULL);
 }
